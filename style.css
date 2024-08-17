@@ -1,0 +1,80 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .sing-un-form{
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(160,187,215);
+ background: linear-gradient(90deg, rgba(160,187,215,1) 0%, rgba(209,186,210,1) 100%);
+    /* background-color: aqua; */
+ }
+ .form h2{
+    font-size: 45px;
+    text-align: center;
+ }
+ .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: rgb(69,131,204);
+background: linear-gradient(90deg, rgba(69,131,204,1) 0%, rgba(198,83,83,1) 100%);   /* background-color: #fff; */
+    padding: 10px 50px;
+    /* width: 300px; */
+    height: auto;
+ }
+ .Sname{
+    margin-bottom: 20px;
+ }
+ .form input{
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: transparent;
+    /* color: #fff; */
+    /* background-color: rgb(173, 196, 209); */
+    padding: 10px;
+    width: 350px;
+    font-size: 15px;
+    margin-top: 10px;
+    /* margin: 10px; */
+    height: 4vh;
+ }
+ .form button{
+    padding: 15px 60px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 250px;
+    border-radius: 10px;
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    outline: none;
+ }
+ .form a{
+    padding: 20px 0px;
+    /* font-size: 20px; */
+    text-decoration: none;
+ }
+ #sing_up_form{
+    display: none;
+ }
+ @media only screen and (max-width: 470px){
+    .form{
+       padding: 0px 20px;
+       width: 300px;
+       flex-wrap: wrap;
+    }
+    .form input{
+       width: 250px;
+       height: 3vh;
+    }
+ }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sing up sing in form in firebase</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="sing-un-form">
+      <form id="sing_up_form" class="form">
+         <h2>Sign Up</h2>
+         <div class="Sname">
+            <label for="name">Name</label><br>
+            <input type="text" id="Sname" required>
+         </div>
+         <div class="Sname">
+            <label for="email">Email</label><br>
+            <input type="email" id="Semail" required>
+         </div>
+         <div class="Sname">
+            <label for="password">Password</label><br>
+            <input type="password" id="Spassward" required>
+         </div>
+         <center>  
+         <button type="submit" id="sing-btn">Sign Up</button> <br>
+         <a href="#" id="create-account1" class="create-account">Already have an account?</a>
+         </center>   
+      </form>
+      <form id="sing_in_form" class="form">
+         <h2>Sign In</h2>
+         <div class="Sname">
+            <label for="email">Email</label><br>
+            <input type="email" id="Iemail" required>
+         </div>
+         <div class="Sname">
+            <label for="password">Password</label><br>
+            <input type="password" id="Ipassward" required>
+         </div>
+         <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;" class="div">
+         <button type="submit" id="singin-btn">Sign In</button><br>
+         <button id="dashboard" style="margin-top: 10px;" class="btn btn-outline-success fs-5">Sing out</button><br>
+         </div>
+         <center>
+         <a href="#" id="create-account2" class="create-account">Create a new account</a>
+         </center>
+         
+      </form>
+   </div>
+   <!-- Sweet alert cdn -->
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <!-- firebase app file -->
+   <!-- App.ja file -->
+   <script type="module" src="app.js"></script>
+</body>
+</html>
